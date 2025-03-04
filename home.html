@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutritionLite - Sua Saúde, Nossa Prioridade</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho com Navegação -->
+    <header>
+        <div class="nav">
+            <h1>NutritionLite</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#services">Serviços</a>
+                <a href="#about">Sobre Nós</a>
+                <a href="/Calculadora/index2.html">Calcular IMC</a>
+                <a href="#blog">Blog</a>
+            </nav>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Busque por serviços ou dicas...">
+            <button onclick="search()"><img style="width: 16px;" src="https://i.im.ge/2024/12/08/z56VD0.lupa.png"></button>
+        </div>
+    </header>
+
+    <!-- Carrossel -->
+    <div class="carousel">
+        <div class="carousel-slides">
+            <img src="https://i.im.ge/2024/12/08/z5jxpG.slide1.jpeg" alt="Nutrição e Saúde">
+            <img src="https://i.im.ge/2024/12/08/z5jb6a.slide2.jpeg" alt="Vida Saudável">
+            <img src="https://i.im.ge/2024/12/08/z5jY2x.slide3.jpeg" alt="Bem-estar">
+        </div>
+        <div class="carousel-text">
+            <h1>Bem-vindo ao NutritionLite</h1>
+            <p>Sua saúde é a nossa prioridade.</p>
+        </div>
+        <div class="carousel-buttons">
+            <button id="prev">❮</button>
+            <button id="next">❯</button>
+        </div>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <div class="container">
+        <!-- Seção de Recursos -->
+        <section class="features" id="services">
+            <div class="feature">
+                <h2>Dietas Personalizadas</h2>
+                <p>Receba recomendações feitas sob medida para suas necessidades.</p>
+            </div>
+            <div class="feature">
+                <h2>Monitoramento de IMC</h2>
+                <p>Acompanhe seu progresso e alcance seus objetivos de forma saudável.</p>
+            </div>
+            <div class="feature">
+                <h2>Consultas Virtuais</h2>
+                <p>Conecte-se com especialistas em nutrição a qualquer hora.</p>
+            </div>
+        </section>
+
+        <!-- Seção de Depoimentos -->
+        <section class="testimonials">
+            <h2>O que nossos clientes dizem</h2>
+            <div class="testimonial">
+                <p>“NutritionLite transformou minha vida! Hoje sou uma pessoa mais saudável e feliz.”</p>
+                <p>- Maria Silva</p>
+            </div>
+            <div class="testimonial">
+                <p>“A plataforma é fácil de usar e as dicas são incríveis. Super recomendo!”</p>
+                <p>- João Pereira</p>
+            </div>
+        </section>
+
+        <!-- Seção de Notícias -->
+        <section class="blog" id="blog">
+            <h2>Últimas do <a href="/Blog/index3.html">Blog</a></h2>
+            <div class="blog-post">
+                <h3>10 Alimentos para Melhorar sua Energia</h3>
+                <p>Descubra os alimentos que podem aumentar sua disposição no dia a dia.</p>
+                <a href="/Blog/index3.html">Leia mais →</a>
+            </div>
+            <div class="blog-post">
+                <h3>Como calcular o seu IMC corretamente</h3>
+                <p>Aprenda a usar o índice de massa corporal para monitorar sua saúde.</p>
+                <a href="#">Leia mais →</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 NutritionLite. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Chatbox -->
+    <div class="chatbox-wrapper">
+        <div class="chatbox-toggle">
+            <i class='bx bx-message-dots'></i>
+        </div>
+        <div class="chatbox-message-wrapper">
+            <div class="chatbox-message-header">
+                <div class="chatbox-message-profile">
+                    <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" class="chatbox-message-image">
+                    <div>
+                        <h4 class="chatbox-message-name">Jonathan Doe</h4>
+                        <p class="chatbox-message-status">online</p>
+                    </div>
+                </div>
+                <div class="chatbox-message-dropdown">
+                    <i class='bx bx-dots-vertical-rounded chatbox-message-dropdown-toggle'></i>
+                    <ul class="chatbox-message-dropdown-menu">
+                        <li>
+                            <a href="#">Search</a>
+                        </li>
+                        <li>
+                            <a href="#">Report</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="chatbox-message-content">
+                <h4 class="chatbox-message-no-message">You don't have message yet!</h4>
+            </div>
+            <div class="chatbox-message-bottom">
+                <form action="#" class="chatbox-message-form">
+                    <textarea rows="1" placeholder="Type message..." class="chatbox-message-input"></textarea>
+                    <button type="submit" class="chatbox-message-submit"><i class='bx bx-send' ></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
